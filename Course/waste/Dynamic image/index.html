@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Dynamic Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hero">
+        <div class="navbar">
+            <img src="image/logo.png" class="logo" alt="">
+            <div class="user">
+                <button type="button">Explore</button>
+                <img src="image/user.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <h1>DISCOVER</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi harum alias amet,<br> magni quam iste dolorem distinctio nemo impedit corrupti sapiente ullam at velit<br> veritatis voluptatibus totam, optio dolore eveniet?</P>
+                <input type="text" name="seach" placeholder="seach" id="">
+            </div>
+        </div>
+        <div class="slider"></div>
+        <img src="image/left-arrow.png" alt="navigation" id="pre">
+        <div class="preview">
+           <img src="image/small1.png" class="thumbnail active" alt="">
+           <img src="image/small2.png" class="thumbnail" alt="">
+           <img src="image/small3.png" class="thumbnail" alt="">
+           <img src="image/small4.png" class="thumbnail" alt="">
+           <img src="image/small5.png" class="thumbnail" alt="">
+        </div>
+        <img src="image/right-arrow.png" alt="navigation" id="next">
+    </div>
+
+    <script>
+        var pre = document.getElementById("pre");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var hero = document.getElementById("hero");
+
+        var backgrounImg = new Array(
+            "image/bg1.png",
+            "image/bg2.png",
+            "image/bg3.png",
+            "image/bg4.png",
+            "image/bg5.png",
+        );
+
+        let next.onclick = function (){
+            hero.style.backgrounImgage = 'url("'+backgrounImg[i+1]+'")';
+        }
+    </script>
+</body>
+</html>

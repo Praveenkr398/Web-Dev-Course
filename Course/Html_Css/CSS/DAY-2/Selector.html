@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-2: Selector</title>
+    <style>
+        /* universal selector */
+        *{
+            margin:0;
+            padding: 4px;
+        }
+    /* cSS Selector: */
+    /* simple selector */
+    h1 {
+        color:navy;
+        font-size: 40px;
+    }
+
+    p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    a{font-weight: bold;font-style: italic;display:block;}
+
+    /* Class and ID selector */
+    .main{border: 2px solid red; display:block;}
+    #para1{width: 109px; display:block;}
+
+    /* Grouping Selector */
+    h1,p,a,.main,#para1 {
+        color: red;
+        font-weight: bold;
+        outline: invert;
+    }
+    
+/* child selector */
+div>h1,h2{
+    background-color: aqua;
+    border-style: dotted;
+}
+
+div>h2>b{
+    background-color: rgb(9, 255, 0);
+    border-style: ridge;
+    color: white;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+    <!--Simple Selector -->
+    <h1>This is Heading of Our Webpage...</h1>
+    <p>About Heading: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque laboriosam consectetur fugiat reiciendis dolore maxime officiis alias, itaque inventore at molestias temporibus! Quod laboriosam et excepturi sunt id sed dolore.</p>
+
+    <a href="#">Clickable Link</a>
+
+    <!-- Class and Id selector -->
+     <h class="main">Style using Class selector</h>
+     <h id="para1">Style using ID selector</h>
+
+     <div>
+        <h1>First Heading</h1>
+        <h2>Second Heading <b>bold</b></h2>
+     </div>
+  
+</body>
+</html>

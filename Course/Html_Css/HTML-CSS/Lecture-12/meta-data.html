@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="This is meta data about our web page for search engine to crow our website">
+    <meta name="keywords" content="">
+    <meta http-equiv="refresh" content="5">
+    <link rel="stylesheet" href="style.css">
+ 
+    <style>
+        details{color: red; font-size: 30px; width:70%;padding-left: 50px;}
+
+        details:nth-child(odd):hover{
+            background-color: rgb(252, 169, 169); border: 1px solid rgb(31, 27, 27); padding: 10px;
+        }
+        details:nth-child(even):hover{
+            background-color: rgb(255, 255, 143); border: 1px solid rgb(255, 0, 0); padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Meta data in HTML, its unvisible on browser
+    </h1>
+    <details>
+        <summary>charset</summary>
+        charset="utf-8" used for standard charecter set for html
+    </details>
+    <details>
+        <summary>Viewport</summary>
+        viewport: used for content device width size 100%
+    </details>
+    <details>
+        <summary>title</summary>
+        Title: show on tabs title bar 
+    </details>
+    <details>
+        <summary>meta:desc (Description)</summary>
+        Description about our webpage used for SEO perpose
+    </details>
+    <details>
+        <summary>meta:kw (Keywords)</summary>
+        used for website keywords for rank on google page
+    </details>
+    <details>
+        <summary>style</summary>
+        used for css internal stye for html code
+
+    </details>
+    <details>
+        <summary>link:css </summary>
+        used for external css for styling html code 
+    </details>
+    <details>
+        <summary>Link:fevicon</summary>
+        used for webpage fevIcon its show on tab right side
+    </details>
+    <details>
+        <summary>script </summary>
+        used for internal javascript code, it placed inside body tag, not head tag
+    </details>
+</body>
+</html>

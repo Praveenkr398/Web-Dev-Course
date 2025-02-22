@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: goldenrod;
+}
+
+.container{
+    background-image: url(IMAGE1.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+ 
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title {
+ font-size: 4vmax;
+ margin-top : 10rem;
+ text-transform: uppercase;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub_title{
+    font-size: 1.5vmax;
+    background-color: rgba(237, 230, 230, 0.27) ;
+    padding: 5px 20px;
+   
+}
+
+#clock{
+    margin-top: 40px;
+    font-size: 4vmax;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing:5px;
+    padding: 20px;
+    color: #000000;
+    z-index: 1;
+    
+}

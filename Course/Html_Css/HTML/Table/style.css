@@ -1,0 +1,27 @@
+table,tr,th,td{
+    border: 2px solid red;
+    /* border-collapse:collapse; */
+   /* border-radius: 9px;  */
+   /* border-style: dashed; */
+   border-style: double;
+   padding: 29px;
+}
+
+table{width: 100%; padding: }
+
+td,th{border-style: dashed;
+/* border-style: groove; */
+/* border-style: hidden; */}
+
+td:hover{
+    background-color: rgb(31, 184, 250);
+    color: white;
+border-style: inherit;
+border-style: initial;
+border-style: ridge;
+
+}
+
+th{border-color: rgb(253, 7, 253); border-style: solid;background-color: pink;}
+
+td{column-span: none;}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object data type</title>
+</head>
+<body>
+    <h1>object data type</h1>
+    <p>make a list of student</p>
+
+    <script>
+        console.log('make a list of student in object')
+        const StudentData = {
+            firstName:  "Mohit",
+            lastName : "Singh",
+            Class:  "12th",
+            age:  19,
+            rollNo : 23,
+        }
+
+        // call student full Name & age and roll number 
+
+        console.log("Student Name is ",StudentData.firstName + " " + StudentData.lastName)
+        console.log("Student Age:", StudentData["age"])
+        console.log("Student Roll No:", StudentData["rollNo"])
+    </script>
+</body>
+</html>

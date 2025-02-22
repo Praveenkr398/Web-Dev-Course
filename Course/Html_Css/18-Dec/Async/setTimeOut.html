@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    <h1>setTimeout</h1>
+    <div></div>
+    <button id="stop">Clear</button>
+    <div id="textAlert"></div>
+<!-- it will print once only but setTimeInterval continuosly printing    -->
+ <P> click on (2S) : CLEAR: button to stop printing : NEW TEXT</P>
+
+    
+    <script>
+        
+
+        // direct funtion 
+        // setTimeout (()=>{
+        //     console.log("hello")
+        // }, 3000);
+
+        const sayHello = (()=>{
+            console.log("Hello mister")
+        })
+
+        const changeText = (()=>{
+            document.querySelector("div").innerHTML = "NEW TEXT"
+        })
+
+        const clear = setTimeout(changeText, 2000);
+        
+       let textAlert =  document.querySelector("#stop").addEventListener("click",
+            function(){
+                clearTimeout(clear)
+                console.log("stopped")
+            }
+        )
+      
+    </script>
+</body>
+</html>

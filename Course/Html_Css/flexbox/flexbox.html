@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox using CSS</title>
+
+    <style>
+        .container{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            border: 1px solid rgb(96, 96, 96);
+            background-color: rgb(0, 0, 0);
+            margin: 10px;
+            width: 450px;
+            height: 450px;
+        }
+
+        .flexbox-container{
+           display: flex;  
+           /* flex-wrap: nowrap;           */
+           /* flex-direction: row; */
+           /* flex-grow: inherit; */
+           /* flex-shrink: inherit; */
+           align-items:end ;
+           /* align-content:center; */
+        }
+
+        .flex-item
+        {
+            border: 1px solid rgb(255, 255, 255);
+            width: px;
+            height: 55px;
+            text-align: center;
+            vertical-align: bottom;
+            margin: 5px;
+        }
+
+        #flex-item1{
+            color: white;
+            background-color: red;
+            width: 49px;
+        }
+        #flex-item2{
+            color: rgb(7, 7, 7);
+            background-color: rgb(72, 255, 0);
+            width: 39px;
+            height: 39px;
+        }
+        #flex-item3{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 230, 0);
+            width: 59px;
+            height: 59px;
+        }
+        #flex-item4{
+            color: white;
+            background-color: rgb(255, 0, 234);
+            width: 49px;
+        }
+        #flex-item5{
+            color: white;
+            background-color: rgb(30, 0, 255);
+            width: 69px;
+            height: 69px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="flexbox-container container">
+        <div class="flex-item" id="flex-item1">1</div>
+        <div class="flex-item" id="flex-item2">2</div>
+        <div class="flex-item" id="flex-item3">3</div>
+        <div class="flex-item" id="flex-item4">4</div>
+        <div class="flex-item" id="flex-item5">5</div>
+    </div>
+</body>
+</html>

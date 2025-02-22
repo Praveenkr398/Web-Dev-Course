@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom: change </title>
+
+    <style>
+        span{
+            background-color: rgb(156, 230, 243);
+            height: 200px;
+            height: 19px;
+            overflow:visible;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>change element</h1>
+
+    <p class="myquote"><span>para-1:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+
+    <p class="myquote"><span>para-2:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+
+    <p class="myquote"><span>para-3:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+<p id="data"></p>
+    <p id="para"><span>para-4:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+
+<img src="/aProject/Blog_Website/image/image1.jpg" width="200px" alt="original image" title="original image">
+<img id="modify" src="/aProject/Blog_Website/image/image1.jpg" width="200px" alt="original image" title="original image">
+
+
+    <script>
+        // 1 : change the text
+         document.querySelector("#modify").src = "/aProject/Blog_Website/image/image4.jpg"
+
+        let myPara = document.getElementById("para").innerHTML = "MY first Image" ;// get html content with tag
+        let myPara1 = document.querySelector("p").style.background = " aqua "// get html content with tag
+        console.log(myPara ,myPara1)
+
+       let myPara3 = document.querySelector("#data").innerHTML = "Time:" + Date() ;
+       console.log(myPara3)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application form </title>
+    <style>
+        form{
+            line-height: 3;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Job Application</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+            <br>
+        <label for="Email">Email ID:</label>
+        <input type="email" id="Email" name="email" placeholder="example@gmail.com">
+        <br>
+        <label for="phone">Phone No:</label>
+        <input type="number" id="phone" name="phone" placeholder="enter here"> 
+        <br>
+        <label for="resume">Resume Upload:</label>
+        <input type="file" name="resume" id="resume">
+        
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" name="Skills" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="Skills" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="Skills" id="JavaScript">
+            <label for="JavaScript">JavaScript</label>
+        </fieldset>
+        
+        <label for="Edu">Highest Education:</label>
+        <select name="Education" id="Edu">
+            <option value="">Select</option>
+            <option value="">10th</option>
+            <option value="">12th</option>
+            <option value="">Degree</option>
+            <option value="">Diploma</option>
+            <option value="">IIT</option>
+            <option value="">PG</option>
+            <option value="">Master</option>
+        </select>
+        <br>
+        <label for="exp">Your Experience</label>
+        <input type="range" name="exp  " id="exp" step="2"  maxlength="2">
+
+        <fieldset>
+            <legend>Availability:</legend>
+            <input type="radio" name="work" id="work1">
+            <label for="work1">Full-Time</label>
+            
+            <input type="radio" name="work" id="work2">
+            <label for="work2">Part-Time</label>
+            
+        </fieldset>
+
+        <label for="opinion" >Your Opinion:</label><br>
+        <textarea placeholder="Write your opinion for this job role..." name="opinion" id="opinion" cols="40" rows="4"></textarea>
+        <br>
+<input type="submit" name="submit" id="submit">
+<input type="reset" name="reset" id="">
+
+</fieldset>
+    </form>
+</body>
+</html>

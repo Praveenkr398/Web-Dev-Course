@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            display: grid;
+            padding: 10px solid blue;
+            grid-template-columns: auto auto auto auto;
+
+        }
+        .grid_item{
+            background-color: blue;
+            padding: 10px solid red;
+            font-size: 40px;
+            color: white;
+            border: 2px solid red;
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+
+        }
+
+        .grid_item8{
+            grid-area: 2/2/8/4;
+            text-align: center;
+            justify-content: center;
+            vertical-align: center;
+            justify-items: center;
+            align-self: center;
+            padding: auto;
+            margin: auto;
+            background-color:red;
+        }
+    .grid_item:hover{background-color: rgb(255, 0, 0);color: rgb(255, 255, 255);}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid_item1 grid_item">1</div>
+        <div class="grid_item2 grid_item">2</div>
+        <div class="grid_item3 grid_item">3</div>
+        <div class="grid_item4 grid_item">4</div>
+        <div class="grid_item5 grid_item">5</div>
+        <div class="grid_item6 grid_item">6</div>
+        <div class="grid_item7 grid_item">7</div>
+        <div class="grid_item8 grid_item">8</div>
+        <div class="grid_item8 grid_item">8</div>
+        <div class="grid_item8 grid_item">8</div>
+        <div class="grid_item8 grid_item">8</div>
+        <div class="grid_item9 grid_item">9</div>
+        <div class="grid_item1 grid_item">1</div>
+        <div class="grid_item2 grid_item">2</div>
+        <div class="grid_item3 grid_item">3</div>
+        <div class="grid_item4 grid_item">4</div>
+        <div class="grid_item5 grid_item">5</div>
+        <div class="grid_item6 grid_item">6</div>
+        <div class="grid_item7 grid_item">7</div>
+        <div class="grid_item8 grid_item">8</div>
+        <div class="grid_item9 grid_item">9</div>
+        <div class="grid_item* grid_item">*</div>
+        <div class="grid_item0 grid_item">0</div>
+        <div class="grid_item0 grid_item">0</div>
+        <div class="grid_item# grid_item"># </div>
+    </div>
+</body>
+</html>

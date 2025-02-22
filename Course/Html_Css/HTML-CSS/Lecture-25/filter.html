@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filtr in css</title>
+    <style>
+        .container {
+            background-color: rgb(214, 245, 243);
+            width: 700px;
+            height: 550px;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 11px;
+
+        }
+
+        img {
+            width: 198px;
+            height: 148px;
+            padding-left: 20px;
+            margin-top: 10px;
+
+        }
+
+        
+            /* filter: blur(3px); */
+            /* filter: brightness(150%); */
+            /* filter: contrast(210%); */
+            /* filter: drop-shadow(10%); */
+            /* filter: grayscale(0%); */
+            /* filter: hue-rotate(880%); */
+            /* filter: invert(10%); */
+            /* filter: opacity(90%); */
+            /* filter: saturate(60%); */
+            /* filter: sepia(); */
+            /* filter: url(bird1.jpg); */
+
+        .box2:hover {
+            filter: blur(2px);
+        }
+
+        .box3:hover {
+            filter: brightness(210%);
+        }
+
+        .box4:hover {
+            filter: contrast(190%);
+        }
+
+        .box5:hover {
+            filter: drop-shadow(210%);
+        }
+
+        .box6:hover {
+            filter: grayscale(191%);
+        }
+
+        .box7:hover {
+            filter: hue-rotate
+        }
+
+        .box8:hover {
+            filter: opacity(40%);
+        }
+
+        .box9:hover {
+            filter: saturate(12);
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted rgb(0, 55, 255);
+            border-width: 2px;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: rgb(0, 140, 255);
+            color: #fff;
+            text-align: center;
+            border-radius: 30px;
+            padding: 5px;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: 80%;
+            left: 20%;
+            margin-left: -10px;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: visible;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mouse Hover on Any Image to see effects: </h1>
+
+
+        <div class="tooltip">
+            <div class="box2">
+                <img src="bird1.jpg" alt="" title="">
+            </div>
+            <span class="tooltiptext">blur: 2px</span>
+        </div>
+        <div class="tooltip">
+
+            <div class="box3">
+                <img src="bird1.jpg" alt="">
+            </div>
+            <span class="tooltiptext">brightness: 210%</span>
+        </div>
+        <div class="tooltip">
+
+            <div class="box4">
+                <img src="bird1.jpg" alt="">
+            </div>
+            <span class="tooltiptext">contrast:190%</span>
+        </div>
+        <!-- 
+        <div class="box5">
+            <img src="bird1.jpg" alt="">
+        </div> -->
+        <div class="tooltip">
+
+            <div class="box6">
+                <img src="bird1.jpg" alt="">
+            </div>
+            <span class="tooltiptext">grayscale: 191%</span>
+        </div>
+        <!-- <div class="box7">
+            <img src="bird1.jpg" alt="" >
+        </div> -->
+        <div class="tooltip">
+
+            <div class="box8">
+                <img src="bird1.jpg" alt="">
+            </div>
+            <span class="tooltiptext">opacity: 40%</span>
+        </div>
+
+        <div class="tooltip">
+
+            <div class="box9">
+                <img src="bird1.jpg" alt="">
+            </div>
+            <span class="tooltiptext">saturate: 12</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

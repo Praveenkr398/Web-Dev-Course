@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible layout without using flexbox</title>
+    <style>
+        .main-container{
+            background-color: rgb(246, 246, 255);
+            width: 50%;
+            margin: auto;
+        }
+
+        .item-box{
+            width: 50px;
+            height: 50px;
+            border: 2px white solid ;
+           
+        }
+
+        .container1:hover {background-color: red;}
+        .container2:hover{background-color: rgb(0, 255, 21);}
+        .container3:hover{background-color: rgb(0, 251, 255);}
+        .container4:hover{background-color: rgb(38, 0, 255);}
+        .container5.container3:hover{background-color: rgb(255, 0, 195);}
+
+
+    </style>
+ </head>
+ <body>
+    <div class="main-container container1 container2 container3 container4 container5">
+        <div class="container1 item-box">Box 1</div>
+        <div class="container2 item-box">Box 2</div>
+        <div class="container3 item-box">Box 3</div>
+        <div class="container4 item-box">Box 4</div>
+        <div class="container5 item-box">Box 5</div>
+    </div>
+ </body>
+ </html>

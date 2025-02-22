@@ -1,0 +1,144 @@
+:root{
+    --color-white: #fffff;
+    --color-black: #202020;
+    --color-glass:rgba(0, 0, 0, 0.468);
+    --color-shadow: 0 0 25px rgba(0, 0, 0, 0.511);
+    --color-gradient:liner-gradient(
+        to right, #ff416c, #ff2600
+    );
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--color-white);
+    font-family: "Poppins";
+}
+
+body{
+    background-color: var(--color-gradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    /* background-color: black; */
+}
+
+.wrapper{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 70%;
+    left: 50%;
+    font-size: 16px;
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   margin-top: 5%;
+   gap: 30px;
+
+}
+
+.heading {
+ text-align: center;
+ margin-bottom: 4em;
+
+}
+
+.heading h1 {
+    text-shadow: var(--color-shadow);
+    font-size: 6.2em;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+.heading h3{
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--color-glass);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--color-shadow);
+    padding: 8px 30px;
+    display: inline-block;
+}
+
+.box{
+    width: 28vmin;
+    height: 29vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+span.num{
+    background-color: var(--color-glass);
+    backdrop-filter: blur(12px);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 4em;
+    box-shadow: var(--color-shadow);
+    border-radius: 0.1em;
+}
+
+span.num:after{
+    content: "";
+    position: absolute;
+    background-color: var(--color-glass);
+    height: 100%;
+    width: 50%;
+    left: 0;
+}
+span.text{
+    font-size: 1em;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    display: block;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    bottom: 20px;
+    padding: 0.7em 0;
+    padding-top: 29px;
+    font-weight: 600;
+    border-radius: 0.3em;
+    box-shadow: var(--color-shadow);
+}
+
+.moving{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-glass);
+    padding: 10px;
+    position: absolute;
+    bottom: 0%;
+}
+
+.moving p{
+    text-align: right;
+}
+
+@media (max-widh:768px) {
+    .countdown{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .box{
+        width: 60vmin;
+        height: 20vmin;
+    }
+    span.num{
+        font-size: 3em;
+    }
+    span.text{
+        font-size: 0.8em;
+    }
+}

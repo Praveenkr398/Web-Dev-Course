@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in Html</title>
+    <style>
+        table , td{border: 1px solid black; text-align: center;}
+        td{padding: 2px 20px;}
+
+        table{padding: 9px;}
+
+       
+    </style>
+
+</head>
+<body>
+    
+    <h1>Table using HTML tag</h1>
+    <p>we can make table using html tag:</p>
+    <p><b>thead: </b>its contain table header like tr^th</p>
+    <p><b>tbody: </b>its contain table data like tr^td</p>
+    <p><b>tfoot: </b>its contain table footer data </p>
+    <p>also we can add <b>captoin in table</b></p>
+    <p><b>colspan:</b> used for collaps table collom</p>
+    <p><b>rowspan:</b> used for collaps table rows</p>
+
+    <h2>Simple table</h2>
+    <table>
+        <tr>
+            <th>Name:</th>
+            <th>Roll No:</th>
+            <th>Attendence</th>
+        </tr>
+
+        <tr>
+            <td>Suresh</td>
+            <td>1</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Muskan</td>
+            <td>2</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Dipak</td>
+            <td>3</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+<h2>Table : Seo Friendly</h2>
+    <table>
+        <caption>College Topper Student</caption>
+        <thead>
+            <tr>
+                <th>Name:</th>
+                <th>Roll No:</th>
+                <th>Grade</th>
+                <th>Marks</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Muskan</td>
+                <td>34</td>
+                <td>A+</td>
+                <td>499</td>
+                <td>Bihar</td>
+            </tr>
+            <tr>
+                <td>Surekha</td>
+                <td>59</td>
+                <td>A+</td>
+                <td>495</td>
+                <td>Panjab</td>
+            </tr>
+            <tr>
+                <td>Dipak</td>
+                <td>32</td>
+                <td>A+</td>
+                <td>480</td>
+                <td>Haryana</td>
+            </tr>
+            <tr>
+                <td>Pankaj</td>
+                <td>02</td>
+                <td>A</td>
+                <td>480</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>Vickky</td>
+                <td>01</td>
+                <td>B</td>
+                <td>449</td>
+                <td>Bihar</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Student</td>
+                <td>5</td>
+            </tr>
+        </tfoot>
+
+        
+    </table>
+
+    <h2>Colspan : Rowspan</h2>
+    <table style="padding: 2px; margin: 39px; border: 3px solid red;">
+        <thead  >
+            <tr   >
+                <td>1</td>
+                <td>2</td>
+                <td colspan="3">colspan</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <td>01</td>
+                <td>02</td>
+                <td>03</td>
+                <td rowspan="3">04</td>
+                
+                <td>05</td>
+            </tr>
+            <tr>
+                <td colspan="3">1,2,3</td>
+               
+              <td>05</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>02</td>
+                <td>03</td>
+
+               <td>05</td>
+            </tr>
+        </tbody>
+        <tfoot >
+            <tr>
+                <td colspan="5">Single row</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

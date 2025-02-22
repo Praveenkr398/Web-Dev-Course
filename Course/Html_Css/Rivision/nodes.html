@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodes in js</title>
+</head>
+<body>
+    <div id="box">
+        <h1>my heading</h1>
+        <p>my paragraph : Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script>
+        let MyHeading = document.getElementsByTagName("h1").innerHTML = document.getElementsByTagName("p").childNodes[0];
+        console.log(MyHeading)
+    </script>
+</body>
+</html>

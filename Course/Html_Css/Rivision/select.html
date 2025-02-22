@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom: Element selecter</title>
+
+    <style>
+        span{
+            background-color: rgb(156, 230, 243);
+            height: 200px;
+            height: 19px;
+            overflow:visible;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Element selector</h1>
+
+    <p class="myquote"><span>para-1:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+
+    <p class="myquote"><span>para-2:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+
+    <p class="myquote"><span>para-3:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+
+    <p id="para"><span>para-4:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+    <script>
+        // 1 : select by id
+         let myPara = document.getElementById("para")
+         console.log(myPara)
+
+         // 2: select by class name
+         let myPara1 = document.getElementsByClassName("myquote")
+         console.log(myPara1)
+
+         // 3 : select by tag name
+         let myPara2 = document.getElementsByTagName("p")
+         console.log(myPara2)
+
+         // 4 : query selector for single element
+         let myQuery1 = document.querySelector("p")
+         console.log(myQuery1.innerText)
+
+        //     query selector All 
+        let myQuery2 = document.querySelectorAll("p")
+        console.log(myQuery2)
+
+        
+
+    </script>
+</body>
+</html>

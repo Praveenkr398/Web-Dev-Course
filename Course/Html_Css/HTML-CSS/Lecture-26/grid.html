@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+      .container{
+        border: 2px solid rgb(204, 204, 245);
+        background-color: rgb(222, 221, 220);
+        margin-left: 40px;
+        margin-top: 40px;
+        padding: 10px;
+        width: 500px;
+        height: 500px;
+        display: grid;
+      
+
+        /* grid-template-columns: repeat(2,1fr); */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(2, 100px); */
+        grid-template-columns: 200px 200px;
+        
+        /* grid-template-rows: 200px 100px 40px; */
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(4,50px); */
+        grid-template-rows:repeat(5,60px);
+
+        gap: 10px;
+        row-gap: 20px;
+        column-gap: 10px;
+
+        /* justify-content: align container in X-Axis ; */
+        justify-content: start;
+        justify-content: end;
+        justify-content: center;
+        justify-content: space-around   ;
+        justify-content: space-between;
+        justify-content: space-evenly;
+
+        /* align-content: align container in Y-Axis ; */
+        align-content: end;
+        align-content: start;
+        align-content: center;
+        align-content: space-around;
+        align-content: space-between;
+        align-content: space-evenly;
+
+        /* align-items: align Items ; */
+        /* align-items: center; */
+        /* align-items: end; */
+        /* align-items: start; */
+        align-items: stretch;
+
+      }
+
+      /* now items styling; in css */
+      #box-1{
+        background-color: green;
+       
+        /* grid-column-start: 1;
+        grid-column-end: 3;
+        grid-column: 1/33;
+        grid-column:span 4; */
+        grid-column: 1/-1;
+        
+        
+      }
+
+      #box-2{
+        background-color: blue;
+
+        /* grid-row-start:2;
+        grid-row-end:5;
+        grid-row: 2/6; */
+        grid-row: span 3;
+      }
+
+      #box-9{
+        background-color: yellow;
+        grid-area: 4/2/6/4;
+      }
+
+      /* Now; lets work on Items:)  */
+
+      #box-10{
+        background-color: red;
+         /* justify-self: end;
+        justify-self: start;
+        justify-self: first baseline;
+        justify-self: center;
+
+        align-self: end;
+        align-self: center; 
+        align-self: flex-start;
+        align-self: stretch; */
+
+        
+
+        grid-column: 1/4;
+        
+      }
+      
+      .box{
+        background-color: #f9e5e5;
+        border: 2px solid rgb(73, 72, 72);
+        padding: 10px;
+        text-align: center;
+        color: rgb(120, 108, 108);
+        font-size: px;
+      }
+    </style>
+</head>
+<body>
+    <!-- shortcut of following content  -->
+     <!-- .container.box#box-$*10 (for same class & 1-10 id name box "content box;1-5") -->
+    
+     <div class="container">
+        <div class="box" id="box-1">Box-1</div>
+        <div class="box" id="box-2">Box-2</div>
+        <div class="box" id="box-3">Box-3</div>
+        <div class="box" id="box-4">Box-4</div>
+        <div class="box" id="box-5">Box-5</div>
+        <div class="box" id="box-6">Box-6</div>
+        <div class="box" id="box-7">Box-7</div>
+        <div class="box" id="box-8">Box-8</div>
+        <div class="box" id="box-9">Box-9</div>
+        <div class="box" id="box-10">Box-10</div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator - Web2Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="show">
+
+        <div class="show1">ABCDEFGHIJKLMNOPQRSTUVWXYZ </div>
+        <div class="show2">1234567890 </div>
+        <div class="show3">abcdefghijklmnopqrstuvwxyz </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <header>Generate a <br><span>Random Password</span></header>
+            <div id="display">
+                <input type="text" placeholder="Your Password" id="password" readonly>
+                <img src="copy.png" alt="copypassword" id="copyImg">
+            </div>
+            <div class="box">
+                <button id="btn">
+                    <img src="power.png" alt="power" id="powerImg">
+                    Generate
+                </button>
+                <input type="number" min="4" max="20" value="8" id="Use">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

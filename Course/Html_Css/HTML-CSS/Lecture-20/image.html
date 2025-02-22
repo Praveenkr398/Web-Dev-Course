@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image alignment</title>
+    <style>
+        .container{
+            background-color: azure;
+            border: 2px solid black;
+            display: flex;
+            width: 95vw;
+            height: 95vh;
+        }
+
+        img{width: 100%;}
+        p{width: 100%; border: 1px solid red; }
+
+        .box1{
+            margin: 20px;
+            padding: 19px;
+            width: 50%;
+        }
+
+        .box2{
+            width: 99%;
+            padding: 3px;
+           flex-direction: column;
+           box-sizing: border-box;
+           overflow: scroll;
+        }
+
+        @media  (max-width:700px) {
+            .container{width: 100%;
+            flex-direction: column;}
+            
+            img{width: 100%;}
+                .box1{width: 70%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+        <p>Text 1</p>
+        <p>Text 2</p>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, amet dicta. Laudantium ducimus blanditiis eum sapiente quaerat eveniet, nam at iste cum veniam aperiam exercitationem minus sed dolorum facilis quam.</span>
+        </div>
+        <div class="box2">
+            <img src="car2.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>

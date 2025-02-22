@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Pro:list, Table, Form</title>
+</head>
+<body>
+    <!-- no1. List: two type of it -->
+
+    <h1>List: UL, OL</h1>
+     <!-- unorder List -->
+    <ul>
+        <li>Apple
+            <ul>
+                <li>Color: Red</li>
+                <li>Season: Winter</li>
+            </ul>
+        </li>
+        <li>Mango<ul type="a">
+            <li>Color: Yellow</li>
+            <li>Season: Summer</li>
+        </ul></li>
+        
+        <li>Litchi <ul>
+            <li>Color: Red</li>
+            <li>Season: slow Winter</li>
+        </ul></li>
+       
+    </ul>
+<hr>
+     <!-- Order list  -->
+     <ol>
+        <li>Apple
+            <ul type="square" >
+                <li>Color: Red</li>
+                <li>Season: Winter</li>
+            </ul>
+        </li>
+        <li>Mango<ol type="a">
+            <li>Color: Yellow</li>
+            <li>Season: Summer</li>
+        </ol></li>
+        
+        <li>Litchi <ul>
+            <li>Color: Red</li>
+            <li>Season: slow Winter</li>
+        </ul></li>
+
+        <hr>
+     
+    </ol>
+
+
+    
+        <!-- Table Tag -->
+        <h1>Table Tag</h1>
+<table>
+    <caption>Student Marksheet</caption>
+    <thead>
+        <tr><th colspan="3">Inter Sharda College</th></tr>
+        <tr>
+            <th>Name</th>
+            <th>Mark</th>
+            <th>Grade</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Priya</td>
+            <td>490</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>Mohit</td>
+            <td>480</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>kunal</td>
+            <td>430</td>
+            <td>B</td>
+        </tr>
+      
+        </tr>
+    </tbody>
+</table> <hr>
+
+<!-- Form tag -->
+  <h1>Apply Form</h1>
+
+  <form action="/action.php">
+    <label for="id1"><input type="text" placeholder="Username..."></label>
+    <label for="id1">    <input type="password" placeholder="Password">
+</label>
+<br><br>
+<label for="101"><input type="radio" value="Class X" name="class" id="101">Class XII</label>
+<label for="102"><input type="radio" value="Class XII" name="class" id="102">Class XII
+</label>
+
+<br><br>
+<h4>Select your Fev Subject</h4>
+<label for="103">
+<input type="checkbox" name="Math" name="subject"   id="103"> Math
+</label><br>
+
+<label for="104">
+    <input type="checkbox" name="Physics" name="subject"   id="104"> Physics 
+    </label><br>
+    
+<label for="105">
+    <input type="checkbox" name="Chemistry" name="subject"   id="105"> Chemistry
+    </label><br>
+    
+<label for="106">
+    <input type="checkbox" name="Commerce" name="subject"   id="106"> Commerce
+    </label>
+<br><br>
+    <select name="Chemistry" id="108">
+        <option value="">Select your city</option>
+        <option value="Patna">Patna</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Gujrat">Gujrat</option>
+    </select>
+
+    <br><br>
+    <textarea name="Opinion" id="107" placeholder="what's your Opinion" rows="7"></textarea>
+<br><br>
+    <input type="reset" name="" id="">
+<input type="submit" value="submit">
+
+  </form>
+<br>
+  <!-- iframe : Embaded Other Website -->
+
+  <iframe src="https://www.flipkart.com" frameborder="0"></iframe>
+
+<br>
+
+<video src="/video/first.mp4" width="200px" controls loop  muted  ></video>
+
+
+<a href="/index.html"><h1>Home</h1></a>
+<hr>
+
+</body>
+</html>

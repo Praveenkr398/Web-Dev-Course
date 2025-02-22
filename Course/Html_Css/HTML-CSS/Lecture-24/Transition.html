@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in ccc</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: lavenderblush;
+            width: 98vw;
+            height: 97vh;
+            border: 2px solid gray;
+            padding: 10px;
+            margin: 10px auto;
+
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+        
+        }
+        
+
+        .box{
+            width: 210px;
+            height: 210px;
+            border: 2px solid gray;
+            margin: 5px;
+            text-align: center;
+            vertical-align:middle;
+            font-size: 30px;
+            color: rgb(119, 6, 6);
+            padding-top: 30px;
+            display: flex;
+flex-direction: column;
+
+        }
+
+        .small{width: 100px;height: 100px; background-color: red;align-self: center;
+        }
+
+        .small1{
+            transition: all;
+            transition-duration: 1s;
+             transform:perspective(90px) rotatex(45deg);
+        }
+        .small2{
+            transition: all;
+            transition-duration: 1s;
+             transform:perspective(90px) rotatey(45deg);
+        }
+        .small3{
+            transition: all;
+            transition-duration: 1s;
+             transform:perspective(90px) rotatez(45deg);
+        }
+       
+
+
+        .small4{
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        
+        @keyframes rotate{
+            
+            
+            0%{
+                transform: rotatex(45deg);
+                background-color: blue;
+            }
+            
+            50%{
+                transform: rotatey(45deg);
+                background-color: rgb(0, 255, 0);
+            }
+            100%{
+                transform: rotatez(45deg);
+                background-color: rgb(238, 0, 255);
+            }
+            
+        }
+        .small5{
+            animation-name: translate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        @keyframes translate{
+            
+            
+            10%{
+                transform:translatex(20px);
+                background-color: blue;
+            }
+            
+            50%{
+                transform:translatey(60px);
+                background-color: rgb(0, 255, 0);
+            }
+            100%{
+                transform: perspective(100px) translatez(40px);
+                background-color: rgb(238, 0, 255);
+            }
+            
+        }
+        .small6{
+            animation-name:scale;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: liner;
+        }
+        @keyframes scale{
+            
+            
+            10%{
+                transform:perspective(100px) scalex(0.4);
+                background-color: blue;
+            }
+            
+            50%{
+                transform:perspective(100px) scaley(2);
+                background-color: rgb(0, 255, 0);
+            }
+            100%{
+                transform: perspective(300px) rotate(45deg) scaleZ(4);
+                background-color: rgb(238, 0, 255);
+            }
+        }
+        .small7{
+            animation-name:skew;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+        @keyframes skew{
+            
+            
+            10%{
+                transform:perspective(100px) skewX(10deg);
+                background-color: blue;
+            }
+            
+            50%{
+                transform:perspective(49px) skewY(20deg);
+                background-color: rgb(0, 255, 0);
+            }
+            100%{
+                transform:perspective(100px) skewy(40deg) ;
+                background-color: rgb(238, 0, 255);
+            }
+        }
+
+        .small8{
+            transform:translate3d();
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1"><div class="small1 small"></div>rotate x 45'</div>
+        <div class="box" id="box-2"><div class="small2 small"></div>rotate y 45'</div>
+        <div class="box" id="box-3"><div class="small3 small"></div>rotate z 45'</div>
+        <div class="box" id="box-4"><div class="small4 small"></div>rotate</div>
+        <div class="box" id="box-5"><div class="small5 small"></div>translate</div>
+        <div class="box" id="box-6"><div class="small6 small"></div>scale</div>
+        <div class="box" id="box-7"><div class="small7 small"></div></div>
+        <div class="box" id="box-8"><div class="small8 small"></div></div>
+        <div class="box" id="box-9"><div class="small9 small"></div></div>
+    </div>
+</body>
+</html>

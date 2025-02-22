@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model in css</title>
+    <style>
+        .container{
+            border: 1px solid red ;
+            padding: 10px;
+        }
+
+        .box>h1{
+            border-bottom: 2px dotted blue;
+            display: inline;
+            padding-left: 10px;
+        }
+
+        .box{
+            border-style: double;
+            border-width: 4px;
+            border-color: red;
+            padding: 10px;
+            margin: 10px;
+
+            border: 3px solid red;
+            
+        }
+
+        .box2{
+            border-top-style: dashed;
+            border-bottom-style: dotted;
+            border-left-style: ridge;
+            border-right-style: solid;
+            padding-left: 60px;
+        }
+
+        .box3{
+            border-style: dashed;
+            border-top-width: 10px;
+            border-left-width: 2px;
+            border-right-width: 5px;
+            border-bottom-width: 20px;
+            margin: 50px;
+        }
+
+        .box4{
+            border-left-color: aqua;
+            border-right-color: red;
+            border-top-color: blue;
+            border-bottom-color: yellow;
+            padding-top: 50px;
+        }
+
+        .box5{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 90cap;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 10px;
+            margin-top: 50px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <h1 >Box model</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quo hic dolorum quae inventore vel rerum, cumque corrupti, ab, obcaecati recusandae esse neque ut tenetur ipsam minima ratione similique! Natus?</p>
+        </div>
+        <div class="box box2">
+            <h1 >All Side Diff border style</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quo hic dolorum quae inventore vel rerum, cumque corrupti, ab, obcaecati recusandae esse neque ut tenetur ipsam minima ratione similique! Natus?</p>
+        </div>
+        <div class="box box3">
+            <h1 >Diff Border Width</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quo hic dolorum quae inventore vel rerum, cumque corrupti, ab, obcaecati recusandae esse neque ut tenetur ipsam minima ratione similique! Natus?</p>
+        </div>
+        <div class="box box4">
+            <h1 >Diff Color</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quo hic dolorum quae inventore vel rerum, cumque corrupti, ab, obcaecati recusandae esse neque ut tenetur ipsam minima ratione similique! Natus?</p>
+        </div>
+        <div class="box box5">
+            <h1 >Diff Radius</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quo hic dolorum quae inventore vel rerum, cumque corrupti, ab, obcaecati recusandae esse neque ut tenetur ipsam minima ratione similique! Natus?</p>
+        </div>
+    </div>
+</body>
+</html>

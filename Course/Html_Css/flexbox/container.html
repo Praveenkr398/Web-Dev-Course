@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flexible layout without using flexbox</title>
+   <style>
+      .main-container{
+         background-color:rgb(13, 130, 240);
+         display:flex;
+         height: 400px;
+
+         flex-direction: row;
+         /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-wrap: nowrap; */
+
+        /* flex-flow: column wrap; */
+        /* flex-flow: row wrap; */
+
+        /* justify-content: flex-start; */
+        /* justify-content:flex-end; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+
+        /* align-items: center; */
+        /* align-items: end; */
+        /* align-items:  start; */
+        /* align-items: stretch; */
+
+        /* align-content: center; */
+        /* align-content: end; */
+        /* align-content: stretch; */
+
+
+        
+
+      }
+
+      .item-box{
+         font-size: 30px;
+         padding: 20px;
+         margin:2px;
+         border: 2px red solid;
+         width: 40px;
+         height: 50px;
+         text-align: center;
+
+         flex-grow: 3;
+
+      }
+
+      /* container item styling : Start Here */
+      .container1{
+         background-color: rgba(255, 0, 0, 0.688);
+         color: white; width: 290px;
+         flex-grow: 2;
+         
+      }
+      
+      .container1:hover{
+         background-color: rgb(255, 0, 0); 
+      }
+      .container2{
+         background-color: rgba(255, 0, 234, 0.638);
+         color: white;
+         flex-shrink: 3;
+      }
+      
+      .container2:hover{
+         background-color: rgb(255, 0, 238);
+      }
+      .container3{
+         background-color: rgba(0, 34, 255, 0.54);
+         color: white;
+         align-self: center;
+      }
+      
+      .container3:hover{
+         background-color: rgb(0, 21, 255);
+      }
+      .container4{
+         background-color: rgba(77, 255, 0, 0.655);
+         color: white;
+      }
+      
+      .container4:hover{
+         background-color: rgb(9, 255, 0);
+      }
+      .container5{
+         background-color: rgba(255, 225, 0, 0.677);
+         color: white;
+      }
+      
+      .container5:hover{
+         background-color: rgb(255, 234, 0);
+      }
+      /* container item styling : End Here */
+
+      </style>
+</head>
+<body>
+   <div class="main-container">
+      <div class="container1 item-box">Box 1</div>
+      <div class="container2 item-box">Box 2</div>
+      <div class="container3 item-box">Box 3</div>
+      <div class="container4 item-box">Box 4</div>
+      <div class="container5 item-box">Box 5</div>
+
+   </div>
+</body>
+</html>

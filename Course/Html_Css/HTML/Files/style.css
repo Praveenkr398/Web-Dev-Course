@@ -1,0 +1,46 @@
+body{
+    background: #ffffff;
+    
+}
+
+.design
+{
+    background-color:rgb(246, 243, 243);
+  border: 1px rgb(211, 186, 186) dotted;
+  border-radius: 10%;
+  border-color: rgb(255, 247, 247);
+  border-bottom: #0fffcf;
+  border-top:29px;
+  border-width: 3px;
+  border-bottom-left-radius: 3px;
+
+  margin: 11px;
+  margin-left: 39px;
+  margin-inline: inherit;
+  margin-bottom: 29px;
+  display: contents;
+  display:inline;
+  margin: 2px 39px 3px 19px;
+}
+
+.head1{
+    /* font-size: 3399px; */
+    font-size: 130px;
+    font-family: Arial, sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+ font-weight: 900;
+ font-style: oblique;
+ font-style:normal;
+ font-synthesis: unset;
+
+ font-stretch: ultra-condensed;
+  font-variation-settings: inherit;
+  margin: 1%;
+  padding: 2%;
+  border: #0fffcf;
+  border-top: #ff0f0f;
+  border: 0cap;
+  border-width: 1px;
+  border-bottom: #ff0f0f;
+
+}

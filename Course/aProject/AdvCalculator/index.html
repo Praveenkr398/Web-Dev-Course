@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <!-- Calculator Display -->
+        <div class="calculator-display">
+            <div id="calculation">0</div>
+            <div id="result">0</div>
+        </div>
+
+        <!-- Calculator Buttons -->
+        <div class="calculator-buttons">
+            <button class="btn" onclick="appendToCalculation('7')">7</button>
+            <button class="btn" onclick="appendToCalculation('8')">8</button>
+            <button class="btn" onclick="appendToCalculation('9')">9</button>
+            <button class="btn" onclick="appendToCalculation('/')">/</button>
+            <button class="btn" onclick="appendToCalculation('4')">4</button>
+            <button class="btn" onclick="appendToCalculation('5')">5</button>
+            <button class="btn" onclick="appendToCalculation('6')">6</button>
+            <button class="btn" onclick="appendToCalculation('*')">*</button>
+            <button class="btn" onclick="appendToCalculation('1')">1</button>
+            <button class="btn" onclick="appendToCalculation('2')">2</button>
+            <button class="btn" onclick="appendToCalculation('3')">3</button>
+            <button class="btn" onclick="appendToCalculation('-')">-</button>
+            <button class="btn" onclick="appendToCalculation('0')">0</button>
+            <button class="btn" onclick="appendToCalculation('+')">+</button>
+            <button class="btn" onclick="clearCalculation()">C</button>
+            <button class="btn" onclick="calculate()">=</button>
+        </div>
+
+        <!-- Clear and History -->
+        <div class="calculator-footer">
+            <button class="btn" onclick="toggleHistory()">Toggle History</button>
+        </div>
+
+        <!-- History Section -->
+        <div id="history" class="history-container">
+            <h3>Calculation History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <!-- Audio for Button Click -->
+    <audio id="button-sound" src="button-click.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+
+
+<!-- code -->
+
+<!-- 1. delet all -->
+ <!-- 2. back delet button -->
+
+
+
+</body>
+</html>

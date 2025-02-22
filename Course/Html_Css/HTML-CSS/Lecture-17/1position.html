@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            padding: 20px;
+            width: 98%;
+            height: 100vh;
+            background-color: rgb(164, 211, 240);
+        }
+
+        img {
+            border: 5px solid rgb(254, 237, 237);
+            box-shadow: 2px 2px 3px rgb(253, 251, 251);
+        }
+
+        .image1:hover {
+            box-shadow: 2px 3px 39px rgb(255, 38, 0);
+        }
+        .image4:hover {
+            box-shadow: 2px 3px 39px rgb(255, 0, 204);
+        }
+
+
+        .image2:hover {
+
+            /* position:static; no effect */
+            position: relative;
+            /*relative has no gap its positioning*/
+            margin: auto;
+            left: 100px;
+            top: 40px;
+           
+            z-index: 1;
+          
+            box-shadow: 2px 3px 39px rgb(0, 89, 255);
+        }
+
+        .image3:hover {
+
+            position: absolute;
+            /*absolute has no gap its positioning*/
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            top: 10%;
+            left: 10%;
+            z-index: 1;
+            box-shadow: 2px 3px 99px rgb(145, 1, 255);
+
+        }
+        .image0{position:fixed;bottom: 10px; right: 10px;      box-shadow: 2px 3px 99px rgb(24, 23, 24);
+        }
+        .image0:hover{    width:400px;  height: 300px;            box-shadow: 2px 3px 99px rgb(244, 41, 0);
+        }
+
+       .image1,.image4{
+        position: sticky;
+        left: 1px;
+        top: 1px;
+       }
+
+    
+       .image5:hover{box-shadow: 2px 2px 50px rgb(0, 255, 0); height: 300px; width: 450px; margin:auto;position:absolute;left: 20%; top: 50%;}
+       .image6:hover{box-shadow: 2px 2px 50px rgb(170, 0, 255); height: 300px; width: 450px; margin:auto;position:absolute;left: 20%; top: 50%;}
+       .image7:hover{box-shadow: 2px 2px 50px rgb(253, 2, 2); height: 300px; width: 450px; margin:auto;position:absolute;left: 20%; top: 50%;}
+       .image8:hover{box-shadow: 2px 2px 50px rgb(242, 255, 0); height: 300px; width: 450px; margin:auto;position:absolute;left: 20%; top: 50%;}
+
+       
+          
+          
+
+    .box>h1{
+        height:2000px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="bird1.jpg" class="image1" alt="bird picture" width="200px">
+        <img src="car1.jpeg" class="image2" alt="bird picture" width="200px" height="113">
+        <img src="car2.jpeg" class="image3" alt="bird picture" width="200px" height="113">
+        <img src="car3.png" class="image4" alt="bird picture" width="200px">
+        <img src="green.png" class="image5" width="200px" >
+        <img src="blue.png" class="image6" width="200px" >
+        <img src="red.png" class="image7" width="200px" >
+        <img src="yellow.png" class="image8" width="200px" >
+        <img src="original.png" class="image0" width="200px" >
+    </div>
+    <div class="box"><h1></h1>
+    </div>
+</body>
+
+</html>

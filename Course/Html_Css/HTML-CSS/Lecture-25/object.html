@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit and cover in css</title>
+    <style>
+        .container{
+            background-color: bisque;
+            border: 2px dodgerblue solid;
+            padding: 10px;
+
+        }
+        .box{
+            background-image: url(bird1.jpg);
+            width: 299px;
+            object-fit: cover;
+            object-position: center;
+            object-fit: cover;
+            object-fit: scale-down;
+            height: 299px;
+            /* background-position: 60%; */
+            background-size: cover;
+            background-position-y: center;
+            background-position: center;
+            /* background-attachment: local; */
+            /* background-clip: border-box; */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Heading of the web page</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde odio totam soluta rerum neque, corporis minus placeat quod ducimus necessitatibus! Minus amet deserunt totam ratione repellat atque tenetur pariatur.</p>
+        </div>
+    </div>
+</body>
+</html>

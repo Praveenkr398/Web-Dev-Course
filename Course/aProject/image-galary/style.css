@@ -1,0 +1,73 @@
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:-3px -2px 2px rgb(243, 243, 245), 1px 1px 3fp hsl(60, 100%, 53%);
+    letter-spacing: 2px;
+    margin: 30px;
+    color: rgb(147, 5, 255);
+    animation-name: title;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+ 
+    
+}
+
+@keyframes title {
+    0%{
+        
+        text-shadow: 2px 2px 3px rgb(242, 255, 0);
+    }
+
+    100%{
+        color: rgb(231, 218, 244);
+    text-shadow: 2px 2px 3px rgb(191, 0, 255);
+    }
+}
+
+body{
+    background-image:linear-gradient(#400183,rgb(255, 255, 255));
+    
+}
+
+.image_container{
+    width: 100%;
+    height:85vh;
+    display: flex;
+    margin: 0 auto 0;
+    box-sizing: border-box;
+}
+
+.image_galary{
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: 0.2s;
+    border: 5px solid transparent;
+}
+
+.image_galary img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 2s;
+    border: 2px solid rgba(128, 0, 255, 0);
+}
+
+.image_galary:hover{
+    flex-basis: 50%;
+    box-shadow: 1px 1px 110px rgb(232, 255, 62) ;
+}
+
+.active{
+    flex-basis: 50%;
+}
+
+.image_container:hover .active{
+    flex-basis: 0;
+}
+
+.image_galary:nth-child(1):hover{
+    flex-basis: 50%;
+}

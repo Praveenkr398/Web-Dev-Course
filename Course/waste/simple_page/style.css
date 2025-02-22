@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    border: 10px solid gray;
+    max-width: 100vw;
+    background-color: rgb(255, 238, 238);
+    padding: 30px;
+}
+
+.box-2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4rem;
+    text-align: justify;
+
+    background-color: red;
+}
+
+.title1{
+    font-size: 30px;
+    text-align: center;
+    border: 5px solid white;
+    padding: 15px ;
+    margin-bottom:20px;
+    margin-top: 20px;
+    background-color: rgb(0, 255, 213);
+    
+}
+.title2{
+    font-size: 30px;
+    background-color: rgb(10, 14, 249);
+    text-align: center;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 15px ;
+    color: white;
+    margin-top: 20px;
+    margin-bottom:20px;
+
+}
+
+
+.explain1{
+    padding: 20px;
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(217, 255, 0));
+}
+
+
+
+.explain2{
+    padding: 20px;
+    background-image: linear-gradient(rgb(246, 255, 0),rgb(255, 0, 0));
+}
+
+.box-1{
+    display: flex;
+    flex-direction: row;
+
+}
+ 
+
+.picture{
+    width: 30rem;
+    border-radius: 100%;
+    border: 5px solid white;
+    box-shadow: 3px 3px 20px purple, -2px -2px 20px  blue;
+}
+
+.profile{
+padding: 30px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+#name{
+    width: 80%;
+    font-size: 2rem;
+    padding-top: 20px;
+    margin-top: 20px;
+     border-bottom: 2px solid red;
+    text-align: center;
+}
+.lucation{
+    
+    text-align: center;
+    margin-right:120px;
+    align-content: center;
+}
+
+ul li {
+    background-color: gray;
+    padding: 30px;
+border: 10px solid white;
+margin: 10px;
+text-decoration: none;
+list-style-type: none;
+}
+
+#list{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    font-size: 30px;
+    border: 2px solid rgba(49, 39, 39, 0.137);
+    padding-left: 15px;
+    width: 90%;
+    margin: 0px auto;
+    background-color: rgb(253, 230, 230);
+    padding: 30px;
+    list-style-type: none;
+    justify-content: space-around;
+}
+ 
+a{
+
+    text-decoration: none;
+}
+
+ol li{
+    background-color: red;
+    padding: 10px 40px;
+}
+
+#puple{
+    background-color: rgb(0, 255, 251);
+}
+
+
+
+#blue{
+    background-color: rgb(21, 0, 255);
+   color: yellow;
+}
+
+a {
+    color: white;
+}
+li:hover{
+background-color: white;
+color: black;
+}
+#puple:hover{
+    background-color: rgb(255, 221, 0);
+    color: black;
+    border: 2px solid red;
+}
+#blue:hover{
+    background-color: rgb(0, 255, 17);
+    color: black;
+    border: 2px solid red;
+}

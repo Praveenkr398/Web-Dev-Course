@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementById: access HTML element by id</title>
+</head>
+
+<body id="demo-5">
+    <!-- background change by id demo -->
+    <button type="reset" onclick="document.getElementById('demo-5').style.backgroundColor = 'yellow'">
+        Yellow
+    </button>
+    <button type="reset" onclick="document.getElementById('demo-5').style.backgroundColor = 'blue'">
+        <div id="demo">blue</div>
+    </button>
+
+    <button type="reset" onclick="document.getElementById('demo-5').style.backgroundColor = 'white'">
+        <div id="demo">light</div>
+    </button>
+    <button type="reset" onclick="document.getElementById('demo-5').style.backgroundColor = 'black'">
+        <div id="demo">dark</div>
+    </button>
+    <br>
+    <hr>
+
+
+    <h1>GetElementById</h1>
+    <p>GetElementById: access HTML element by id</p>
+
+
+    <button type="button" onclick='document.getElementById("demo-1"). innerHTML="Another Text 1"'>
+        <div id="demo-1">changed text </div>
+    </button>
+
+    <button type="button" onclick="document.getElementById('demo-2').innerHTML = 'Another text 2'">
+
+        <div id="demo-2">Try me also</div>
+    </button> <br>
+
+    <button type="reset" onclick="document.getElementById('demo-3').style.fontSize = '50px'">
+        <div id="demo-3">Text: 50px</div>
+    </button> <br>
+    
+    <button  type="reset" onclick="document.getElementById('demo-4').style.backgroundColor = 'red'">
+        <div id="demo-4" style="font-size: 30px;width: 300px; height: 100px;padding-top: 50px;"> bg-Color</div>
+    </button> <br>
+
+
+
+
+</body>
+
+</html>

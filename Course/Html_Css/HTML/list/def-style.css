@@ -1,0 +1,8 @@
+dd{background-color: gray;
+flex: left;
+overflow: hidden;
+display: inline;
+overflow: auto;
+size: 39px;
+grid-area: 39px;
+}

@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(64, 255, 0);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+ 
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    z-index: 33;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title {
+ font-size: 4vmax;
+ z-index: 3;
+ margin-top : 10rem;
+ text-transform: uppercase;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub_title{
+    z-index: 3;
+    font-size: 1.5vmax;
+    background-color: rgba(237, 230, 230, 0.27) ;
+    padding: 5px 20px;
+   
+}
+
+#clock{
+    margin-top: 40px;
+    font-size: 15vmax;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing:5px;
+    padding: 20px;
+    color: #000000;
+    z-index: 1;
+    
+}
+
+#motion-1{
+    width:1vmax;
+    height: 1vmax;
+    background-color: red;
+    border-radius: 10px;
+}
+#motion-11{
+    width:1vmax;
+    height: 1vmax;
+    background-color: rgb(0, 72, 255);
+    border-radius: 10px;
+}
+#motion-2{
+    width:1vmax;
+    height: 1vmax;
+    background-color: red;
+    border-radius: 10px;
+    z-index: 2;
+}
+#motion-22{
+    width:3vmax;
+    height: 1vmax;
+    background-color: red;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#motion-3{
+    width:83.5%;
+    height: .2vmax;
+    background-color: red;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    top: 77%;
+    left: 8.3%;
+}
+#motion-4{
+    width:46%;
+    height: .2vmax;
+    background-color: red;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    top: 74%;
+    left: 21.3%;
+}
+
+#motion-1{
+    position:relative;
+    z-index: 33;
+    
+    animation-name: motion-1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-direction: alternate;
+}
+
+#motion-11{
+    position:absolute;
+    
+    animation-name: motion-11;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-direction: alternate;
+}
+
+#motion-2{
+    position:absolute;
+    
+    animation-name: motion-2;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-direction: alternate;
+}
+#motion-22{
+    position:absolute;
+    
+    animation-name: motion-22;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+#motion-3{
+    position:absolute;
+    
+    animation-name: motion-3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+#motion-4{
+    position:absolute;
+    
+    animation-name: motion-4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+#box{
+
+    width:1vw;
+    height: 100vh;
+        background-color: red;
+        z-index: 0;
+    }
+    #box{
+        position:absolute;
+        z-index: 0;
+ 
+    animation-name: box;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+@keyframes box{
+   0%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+   }  
+
+   10%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: #ff0000;
+   }  
+
+   20%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: #fff200;
+   }  
+
+   30%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: #4dff00;
+   }  
+   40%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: #00f2ff;
+   }  
+   50%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: #0044ff;
+   }  
+   60%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: #e100ff;
+   }  
+   70%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: #ffee00;
+   }  
+   80%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: #ff3c00;
+   }  
+   90%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: #00fffb;
+   }  
+   100%{
+    top: 0%;
+    left:0%;
+    width:100vw;
+    height: 100vh;
+    background-color: #2600ff;
+   }  
+
+   
+}
+
+@keyframes motion-1{
+   0%{
+    top: 90%;
+    left:52%;
+    background-color: rgb(255, 217, 0);
+   }  
+    100%{
+        background-color: rgb(255, 0, 0);
+        top: 72%;
+        left:52%;
+    }
+}
+
+@keyframes motion-11{
+   0%{
+    top: 43%;
+    left:52%;
+    background-color: rgb(255, 217, 0);
+   }  
+    100%{
+        background-color: rgb(0, 255, 4);
+        top: 55%;
+        left:52%;
+    }
+}
+
+@keyframes motion-2{
+   0%{
+    top:73%;
+    left:21%;
+    background-color: rgb(255, 0, 0);
+   }  
+    100%{
+        background-color: rgb(247, 255, 1);
+        top:73%;
+        left:66%;
+    }
+}
+
+@keyframes motion-22{
+   0%{
+    top:75.4%;
+    left:8%;
+    background-color: rgb(94, 255, 0);
+   }  
+    100%{
+        background-color: rgb(213, 255, 1);
+        top:75.4%;
+        left:89%;
+    }
+}
+
+@keyframes motion-3{
+   0%{
+   
+    background-color: rgb(225, 255, 0);
+   }  
+    100%{
+        background-color: rgb(255, 0, 0);
+       
+    }
+}
+
+@keyframes motion-4{
+   0%{
+    
+    background-color: rgb(51, 255, 0);
+   }  
+    100%{
+        background-color: rgb(255, 0, 0);
+      
+    }
+}

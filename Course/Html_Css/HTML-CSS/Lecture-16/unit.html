@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      
+        .first{
+            background-color: yellow;
+            border: 1px solid ;
+            padding-left: 10px;
+            /* width  100 %  */
+            width: 100%;
+        }
+        .first1{
+            background-color: rgb(64, 255, 0);
+            border: 1px solid ;
+            padding-left: 10px;
+            /* width  80 %  */
+            width: 80%;
+        }
+      .parent{
+        background-color: aqua;
+        border: 2px solid grey;
+        margin-top: 20px;
+        padding-left: 10px;
+      }
+
+      .child1{
+        background-color: red;
+        width: 90%;
+      }
+      .child2{
+        background-color: rgb(0, 47, 255);
+        width: 50%;
+      }
+      p{
+        background-color: rgb(255, 234, 0);
+        width: 50%;
+      }
+
+     
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>unit in % </legend>
+        <div class="first">
+            <h1>
+                Full % of its own parent
+            </h1>
+    </div>
+    <div class="first1">
+        <h1>
+            80 % of its own parent
+        </h1>
+    </div>
+    <div class="parent">
+        <h1 class="child1">
+            Child 1 : 90%
+        </h1>
+        <h1 class="child2">
+            Child 1 : 50%
+            <p>Grand Child 50%</p>
+        </h1>    
+    </div>
+</fieldset>
+</body>
+</html>

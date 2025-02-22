@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid_Container{
+            background-color: rgb(247, 255, 187);
+            /* display:inline-grid; */
+            display: grid;
+            /* grid-template-columns: auto auto auto ; */
+            grid-template-columns: auto;
+            grid-template-rows: 200px auto;
+
+            padding: 10px;
+            row-gap: 10px;
+            column-gap: 20px;
+            /* gap: 70px; */
+height: 900px;
+            /* justify-content: center; */
+            /* justify-content:end; */
+            justify-content:safe;
+
+            /* align-content: center; */
+            align-content: space-evenly;
+
+
+        }
+
+        .grid_item{
+            background-color: dar;
+            border: 2px solid rgb(155, 142, 255);
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .cap{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+       
+        .grid_item_call{
+            background-color: green;
+            color: white;
+            border-radius: 40px;
+            padding:10px;
+            grid-column: 1/span 3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid_Container">
+        <div class="cap grid_item">This is Grid Span</div>
+        <div class="grid_item1 grid_item">1</div>
+        <div class="grid_item2 grid_item">2</div>
+        <div class="grid_item3 grid_item">3</div>
+        <div class="grid_item4 grid_item">4</div>
+        <div class="grid_item5 grid_item">5</div>
+        <div class="grid_item6 grid_item">6</div>
+        <div class="grid_item7 grid_item">7</div>
+        <div class="grid_item8 grid_item">8</div>
+        <div class="grid_item9 grid_item">9</div>
+        <div class="grid_item* grid_item">*</div>
+        <div class="grid_item0 grid_item">0</div>
+        <div class="grid_item# grid_item"># </div>
+        <div class="grid_item_call grid_item" >CAll</div>
+
+    </div>
+</body>
+</html>

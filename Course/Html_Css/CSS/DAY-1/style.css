@@ -1,0 +1,83 @@
+body{
+    background-color: azure;
+}
+
+h1{
+    font-size: 399px;
+    background-color: rgb(170, 251, 179);
+
+}
+
+/* Background */
+
+
+.bg{
+    background-color: magenta;
+    background-image: url(/HTML/Files/image1.png);
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-attachment:scroll;
+     
+}
+
+.border{
+    border: 2px solid black;
+    border-style: dashed;
+    border-style: dotted;
+    border-style: solid;
+    border-bottom-style: solid;
+    border-top-style: dotted;
+    border-color: brown;
+    border-right-width: 10px;
+    border-radius: 39px;
+    padding: 0px 19px;
+}
+
+.margin{
+    border: 1px solid black;
+    margin: 29px;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 129px;
+    /* margin: auto; */
+
+}
+
+.padding{
+    border: 10px solid orangered;
+    padding: 10px;
+    margin-top: 10px;
+    padding-left: 29px;
+    padding-right: 99px;
+    text-align: center;
+    padding-block: unset;
+}
+
+.width{
+    font-size: 30px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.c1{
+    border: 2px solid red;
+    
+    height: 100px;
+    max-height: 290px;
+}
+.c2{
+    border: 2px solid red;
+    width: 290px;
+    height: 300px;
+    /* min-height: 290px; */
+    max-width: 100px;
+}
+.c3{
+    border: 2px solid red;
+    width: 300px;
+  height: 39px;
+  min-height:10px;
+    /* min-height: 290px;*/
+}

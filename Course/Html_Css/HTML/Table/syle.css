@@ -1,0 +1,94 @@
+img{
+    overflow: hidden;
+    display: auto;
+    float:left;
+    width: 109px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+
+ul{
+    float: right;
+    text-decoration: none;
+    display: block;
+background-color: rgb(9, 163, 247);
+color: white;
+}
+
+a{color: white; text-align: center;text-decoration: none;}
+
+a:hover
+{
+    background-color: blueviolet;
+    color: rgb(243, 236, 236);
+}
+
+li{
+    display: block;
+    text-align: center;
+    float: left;
+   padding: 20px;
+  
+}
+li:hover{color: rgb(43, 220, 226);background-color: rgb(55, 255, 0);}
+
+li{display: flex;}
+
+section{
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 29px;
+    font-weight: 300;
+    text-align: justify;
+    
+    clear: right;
+}
+
+table{
+    border: 1px solid gray;
+    padding: 5px;
+    border-spacing: 9px;
+    
+    text-align: center;
+    display:inline ;
+    float: left;
+   
+    text-align: center;
+    width: 100%;
+
+
+}
+
+
+th:nth-child(even) {
+  background-color: rgb(208, 255, 0);
+}
+
+th:nth-child(odd){
+    background-color: rgb(49, 252, 9);
+}
+tr:nth-child(odd){
+    background-color: aquamarine;
+}
+td:nth-child(odd) {
+    background-color: rgb(205, 156, 250);
+}
+tr{border: 2px solid red;width: 100%;}
+td{border: 1px solid black;
+border-style: double;
+padding-top:10px;
+padding-bottom: 10px;
+width: 100%;
+
+}
+
+th{padding-top:10px;
+    padding-bottom: 10px;
+}
+
+td:hover
+{
+    background-color: rgb(8, 19, 237);
+    color: white;
+}
